@@ -14,9 +14,10 @@ public class SelectionSort {
 		int i, j, min, temp, len = arr.length;
 		for (i = 0; i < len - 1; i++) {
 			min = i;
-			for (j = i + 1; j < len; j++)
+			for (j = i + 1; j < len; j++){
 				if (arr[min] > arr[j])
 					min = j;
+			}
 			temp = arr[min];
 			arr[min] = arr[i];
 			arr[i] = temp;
